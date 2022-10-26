@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    background-color: ;
+    height: 10vh;
+    color: black;
+}
+.logo{
+    flex: 1;
+    margin-left: 120px;
+    margin-top: 15px;
+    color: black;
+}
+.navs{
+flex: 3;
+margin-top: 20px;
+}
+.btn{
+    flex: 1;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+ul li a{
+    text-decoration: none;
+    font-weight: 700;
+color: black;
+margin: 17px;
+}
+ul li a:hover{
+    color: brown;
+}
+nav #check,.menu{
+    display: none;
+}
+@media (max-width:750px){
+.navs{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: rgb(20,20,20);
+    padding: 2rem;
+    right: -250px;
+}
+nav ul li{
+    margin: 1rem 0;
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+}
+nav .btn{
+    display: none;
+}
+.menu{
+    display: inline-block;
+    position: fixed;
+    right: 2.5rem;
+    z-index: 1;
+}
+#check:checked~.navs{
+    right: 0;
+}
+}
+
+button{
+    padding: 8px;
+    border-radius: 5px;
+    background: cornflowerblue;
+    font-weight: 800;
+    width: 150px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.btn li{
+    list-style: none;
+    display: inline-block;
+}
+.btn li a{
+    text-decoration: none;
+    font-weight: 700;
+color: black;
+margin: 17px;
+}
+.btn li a:hover{
+    color: brown;
+}
+button:hover{
+    background-color: brown;
+}
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./images/hero/port-img3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+section{
+    padding: 2em 9%;
+    background-color: whitesmoke;
+    margin-top: 15px;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: rgb(58,53,53);
+    font-family: Arial;
+    font-weight: 600;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+    font-size: 15px;
+    background-color: aliceblue;
+
+}
+.services .box-container .box{
+    text-align: center;
+    border: black solid;
+    box-shadow: 0px 5px 5px black;
+    border-radius: .5rem;
+    padding: 2rem;
+    color: cornflowerblue;
+    height: 30vh;
+
+}
+.services .box-container .box h3{
+    color: black;
+}
+.services .box-container .box p{
+    color: black;
+}
+
+.services .box-container .box:hover{
+    background: antiquewhite;
+    transition: .8s;
+    transform: translateY(-25px);
+}
+h5{
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.webtn{
+    margin-top: .7rem;
+    display: inline-block;
+    padding: .5rem .8rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: black;
+    background: white;
+    border-radius: .4rem;
+    border: solid black;
+}
+.webtn:hover{
+    background-color: brown;
+    color: white;
+}
+.review{
+    background-color: aliceblue;
+}
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: 1.9rem;
+        background-color: white;
+       
+    }
+    .review .box-container .box{
+        text-align: center;
+        padding: 2rem;
+        border-radius: .5rem;
+        border: none;
+        height: 69vh;
+        line-height: 1.1;
+    }
+    .review .box-container .box:hover{
+        background: antiquewhite;
+        transition: .8s;
+        transform: translateY(-25px);
+    }
+    
+    .review .box-container .box img{
+        height: 20vh;
+        width: 20vh;
+        border-radius: 50%;
+    }
+    .review .box-container .box b{
+        color: blue;
+    }
+    .contact .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+        gap: 1.5rem;
+    }
+    .contact{
+        background-color: black;
+    }
+    .contact .row form{
+        border-radius: .5rem;
+        border: gray;
+        box-shadow: 3px 3px 3px 3px black;
+        padding: 2rem;
+        text-align: center;
+        background-color: rgb(119, 145, 169);
+    }
+    .contact .row form h3{
+        color: black;
+        font-size: 1rem;
+    }
+    .contact .row form .box{
+        width: 100%;
+        margin: .6rem 0;
+        padding: .7rem .7rem;
+        border-radius: .5rem;
+        font-size: 1rem;
+    }
+
+    .webt{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .7rem .8rem;
+        font-size: .8rem;
+        cursor: pointer;
+        color: black;
+        background: rgb(119, 145, 169);
+        border-radius: .5rem;
+        border: solid white;
+    }
+    .webt:hover{
+        background-color: white;
+        color: black;
+    }
+.contact .row .location{
+    display: grid;grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1.9rem;
+    padding: 1.3rem 1rem;
+    background-color: black;
+}
+.contact .row .location .fax{
+    text-align: center;
+        padding: .7rem 2rem;
+        border: none;
+        height: 23vh;
+        line-height: 1.4;
+        color: black;
+        background-color: white;
+}
+.contact .row .location .fax:hover{
+    background: antiquewhite;
+    transition: .8s;
+    transform: translateY(-25px);
+}
+
+.contact .row .location i{
+    color: cornflowerblue;
+}
+.footer{
+    background-color: cornflowerblue;
+    display: flex;
+}
+.footer .pone{
+    flex: 1;
+    color: white;
+    padding-top: 19px;
+}
+.footer .ptwo{
+    display: grid;grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.3rem;
+    padding: 1.3rem 1rem;
+    flex: 1.5;
+    color: white;
+}
+.footer .pone input{
+    width: 59%;
+    margin: .6rem 0;
+    padding: .7rem .7rem;
+    font-size: 1rem;
+}
+.footer .pone b{
+    width: 29%;
+    margin: .6rem 0;
+    padding: .7rem .7rem;
+    font-size: 1rem;
+    border:solid white;
+    cursor: pointer;
+}
+.footer .pone b:hover{
+    background-color: white;
+    color: black;
+}
+@media (max-width:412px) {
+    textarea{
+        width:280px;
+        border-radius: .5rem
+    }
+}

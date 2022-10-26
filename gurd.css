@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    background-color: ;
+    height: 10vh;
+    color: black;
+}
+.logo{
+    flex: 1;
+    margin-left: 120px;
+    margin-top: 15px;
+    color: black;
+}
+.navs{
+flex: 3;
+margin-top: 20px;
+}
+.btn{
+    flex: 1;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+ul li a{
+    text-decoration: none;
+    font-weight: 700;
+color: black;
+margin: 17px;
+}
+ul li a:hover{
+    color: brown;
+}
+button{
+    padding: 8px;
+    border-radius: 5px;
+    background: cornflowerblue;
+    font-weight: 800;
+    width: 150px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.btn li{
+    list-style: none;
+    display: inline-block;
+}
+.btn li a{
+    text-decoration: none;
+    font-weight: 700;
+color: black;
+margin: 17px;
+}
+.btn li a:hover{
+    color: brown;
+}
+button:hover{
+    background-color: brown;
+}
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./images/hero/port-img4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+section{
+    padding: 2em 9%;
+    background-color: cornflowerblue;
+    margin-top: 15px;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: rgb(58,53,53);
+    font-family: Arial;
+    font-weight: 600;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1.5rem;
+    font-size: 18px;
+    background-color: aliceblue;
+
+}
+.services .box-container .box{
+    text-align: center;
+    border: lightgrey;
+    box-shadow: 0px 5px 5px black;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    color: cornflowerblue;
+
+}
+.services .box-container .box h3{
+    color: black;
+}
+.services .box-container .box p{
+    color: black;
+}
+
+.services .box-container .box:hover{
+    background: antiquewhite;
+    transition: .8s;
+    transform: translateY(-25px);
+}
+
+.webtn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem .8rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #fff;
+    background: cornflowerblue;
+    border-radius: .5rem;
+}
+.webtn:hover{
+    background-color: brown;
+    color: white;
+}
+.review{
+    background-color: aliceblue;
+}
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+        gap: 1.9rem;
+        background-color: white;
+       
+    }
+    .review .box-container .box{
+        text-align: center;
+        padding: 2rem;
+        border-radius: .5rem;
+        border: grey;
+        box-shadow: 5px 5px 5px black;
+        height: 69vh;
+        line-height: 2;
+    }
+    .review .box-container .box:hover{
+        background: antiquewhite;
+        transition: .8s;
+        transform: translateY(-25px);
+    }
+    
+    .review .box-container .box img{
+        height: 20vh;
+        width: 20vh;
+        border-radius: 50%;
+    }
+    .contact .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+        gap: 1.5rem;
+    }
+    .contact{
+        background-color: white;
+    }
+    .contact .row form{
+        border-radius: .5rem;
+        border: gray;
+        box-shadow: 3px 3px 3px 3px black;
+        padding: 2rem;
+        text-align: center;
+        background-color: cornflowerblue;
+    }
+    .contact .row form h3{
+        color: black;
+        font-size: 1rem;
+    }
+    .contact .row form .box{
+        width: 100%;
+        margin: .6rem 0;
+        padding: .7rem .7rem;
+        border-radius: .5rem;
+        font-size: 1rem;
+    }
+
+    .webt{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .7rem .8rem;
+        font-size: .8rem;
+        cursor: pointer;
+        color: #fff;
+        background: brown;
+        border-radius: .5rem;
+    }
+    .webt:hover{
+        background-color: white;
+        color: black;
+    }
+    .contact .row .location{
+        background-color: aliceblue;
+        padding: 2rem 4rem;
+        line-height: 1.4;
+        border-radius: .5rem;
+        box-shadow: 1px 1px 1px 1px black;
+    }
+    .footer{
+        background-color: black;
+        margin-top: 15px;
+        height: 40vh;
+        color: white;
+    }
+    .butt{
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 6rem;
+    }
+
+    @media (max-width:412px) {
+        main{
+            display: none;
+        }
+        nav{
+            display: none;
+        }
+       

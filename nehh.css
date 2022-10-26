@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    background-color: darkslateblue;
+    height: 10vh;
+    color: white;
+}
+.logo{
+    flex: 1;
+    margin-left: 120px;
+    margin-top: 15px;
+    color: white;
+}
+.navlinks{
+    flex: 3;
+    margin-top: 20px;
+    }
+
+    ul li{
+        list-style: none;
+        display: inline-block;
+        
+    }
+
+    ul li a{
+        text-decoration: none;
+        font-weight: 700;
+    color: white;
+    margin: 17px;
+    }
+
+    ul li a:hover{
+        color: black;
+    }
+    .navlinks ul .bnw a{
+        background-color: white;
+        color: black;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .navlinks ul .bnw a:hover{
+        background-color: black;
+        color: white;
+    }
+    /* nav ul li a::after{
+        content: "";
+        display: block;
+        height: 3px;
+        background: #a0ebfd;
+        width: 0%;
+        transition: all ease-in-out 300ms;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    } */
+    nav #check,.menu{
+        display: none;
+    }
+    @media (max-width:750px){
+    .navlinks{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background: rgb(20,20,20);
+        padding: 2rem;
+        right: -250px;
+    }
+    nav ul li{
+        margin: 1rem o;
+        display: inline-block;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu{
+        display: inline-block;
+        position: fixed;
+        right: 2.5rem;
+        z-index: 1;
+    }
+    #check:checked~.navlinks{
+        right: 0;
+    }
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 20px;
+        padding: 2em 15%;
+        background-color: darkslateblue;
+    }
+    .wordss{
+        padding-top: 10rem;
+        color: white;
+    }
+    .lgii{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .7rem 1.3rem;
+        font-size: .8rem;
+        cursor: pointer;
+        color: black;
+        background: white;
+        border-radius: .2rem;
+    }
+    .lgii:hover{
+        background-color: black;
+        color: white;
+    }
+    button{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .7rem 1.3rem;
+        font-size: .8rem;
+        cursor: pointer;
+        color: #fff;
+        background: darkslateblue;
+        border-radius: .2rem;
+        border: solid black;
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+    }
+    img{
+        width: 430px;
+margin-right: 240px;
+padding-top: 80px;
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 15px;
+        padding: 2em 15%;
+        background-color: rgb(244, 226, 226);
+       
+    
+    }
+    .services .box{
+        text-align: center;
+        border: none;
+        border-radius: .5rem;
+        padding:1rem 3rem 4rem 3rem;
+        color: brown;
+        height: 50vh;
+        line-height: 1.7;
+        width: 200px;
+        background-color: aliceblue;
+        box-shadow: 5px 5px 5px black;
+    
+    }
+    .services .box h3{
+        color: black;
+        font-weight: 900;
+        font-size: x-large;
+    }
+    .services .box p{
+        color: black;
+    }
+    .services .box b{
+        color: brown;
+        font-weight: 900;
+        font-size: xx-large;
+    }
+    
+    .services .box:hover{
+        background: antiquewhite;
+        transition: .8s;
+        transform: translateX(25px);
+    }
+    .review{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 15px;
+        padding: 2em 25%;
+    }
+    .review .worddd{
+        padding-top: 90px;
+    }
+    .review .imss{
+padding-top: 70px;
+    }
+    .review .imss img{
+        width: 280px;
+    }
+    .featur{
+        background: rgb(244, 226, 226);
+    }
+    .featur h1,h5,h6{
+        text-align: center;
+    }
+    .featur h1{
+        padding-top: 35px;
+    }
+    .featur .boxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 20px;
+        padding: 2em 10%;
+    }
+    .featur .boxs .box{
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 5px black;
+        border-radius: .5rem;
+        padding: 2.5rem;
+        background-color: aliceblue;
+    }
+    .featur .boxs .box:hover{
+        background: antiquewhite;
+        transition: .8s;
+        transform: translateY(-25px);
+    }
+    .boxx{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 20px;
+        padding: 2em 10%; 
+    }
+    .boxx .one{
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 5px black;
+        border-radius: .5rem;
+        padding: 2.5rem;
+        background-color: aliceblue;
+    }
+
+
+    .tagss{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 20px;
+        padding: 2em 15%;
+    }
+    .tagss img{
+        width: 100px;
+    }
+    .footer{
+        color: white;
+        background-color: darkslateblue;
+    }
+    .footer h1{
+        text-align: center;
+        padding-top: 75px;
+    }
+    .footer p{
+        text-align: center;
+    }
+    .footer .ffd{
+        /* margin-left: 550px; */
+        justify-items: center;
+    }
+    .footer input{
+       justify-items: center;
+        width: 29%;
+    margin: .6rem 0;
+    padding: .7rem .7rem;
+    font-size: 1rem;
+    border: solid black;
+    }
+    .footer b{
+        width: 9%;
+    margin: .6rem 0;
+    padding: .7rem .7rem;
+    font-size: 1rem;
+    border:solid black;
+    cursor: pointer;
+    background-color: darkslateblue;
+    color: white;
+    }
+    .footer .fboxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        font-size: 20px;
+        padding: 2em 15%;
+    }
+    .footer .fboxs .fone{
+        flex: 2;
+        line-height: 1.6;
+    }
+    .footer .fboxs .ftwo{
+        flex: 1;
+        padding-top: 29px;
+    }
+    .footer .fboxs .ftwo h1{
+        font-size: x-large;
+        font-weight: 800;
+        
+    }
+    .footer .ffd b:hover{
+        background-color: black;
+    }
