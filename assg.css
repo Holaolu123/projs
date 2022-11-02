@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    background: deepskyblue;
+    height: 5vh;
+    padding-top: 18px;
+    justify-content: space-around;
+}
+.logo{
+    color: white;
+}
+ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+ul li a:hover{
+    color: black;
+    font-weight: 700;
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: black;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main{
+    display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        padding: 4em 23%;
+        background-color: deepskyblue;
+        
+    }
+    .main .pone{
+        color: white;
+        margin-top: 30px;
+        width: 100%;
+        font-size: small;
+    }
+    .main .pone:hover{
+        animation: left 1s ease-in-out;
+    }
+    @keyframes left{
+        0%{
+    transform: translateX(-100px);
+        }
+        100%{
+    transform: translateX(0px);
+        }
+    }
+    .brtt{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .4rem 1.2rem;
+        font-size: .8rem;
+        cursor: pointer;
+        color: #fff;
+        background: deepskyblue;
+        border-radius: 5px;
+        text-align: start;
+        border: solid white;
+    }
+    .brtt:hover{
+        background-color: white;
+        color: black;
+    }
+    .main .form{
+        border-radius: .5rem;
+        padding: 2rem;
+        background-color: white;
+        width: 65%;
+        height: 30vh;
+    }
+    .main .form:hover{
+        animation: right 1s ease-in-out;
+    }
+    @keyframes right{
+        0%{
+    transform: translateX(100px);
+        }
+        100%{
+    transform: translateX(-0px);
+        }
+    }
+    .main .form h3{
+        color: black;
+        font-size: 1rem;
+        text-align: start;
+    }
+    .main .form .box{
+        width: 95%;
+        font-size: small;
+        margin: .8rem 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .bttrn{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .4rem 1.2rem;
+        font-size: .8rem;
+        cursor: pointer;
+        color: #fff;
+        background: deepskyblue;
+        border-radius: 5px;
+        text-align: start;
+        border: none;
+    }
+    .bttrn:hover{
+        background-color: white;
+        color: black;
+        border:solid black;
+    }
+    .services p{
+        text-align: center;
+        padding-top: 45px;
+    }
+    .services .sectt{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        padding: 3em 20%;
+    }
+    .services .sectt .one{
+        text-align: center;
+    }
+    .services .sectt .one b{
+        color: deepskyblue;
+    }
+    .boxxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem;
+        padding: 4em 25%;
+    }
+    .boxxs .bbll{
+        background-color: black;
+        color: deepskyblue;
+        padding: 22px 0 0 10px;
+        height: 6vh;
+        width: 80%;
+        margin-top: 45px;
+    }
+    .boxxs .sbbb p{
+        background-color: aliceblue;
+        color: black;
+        padding: 22px 0 0 10px;
+        height: 5vh;
+        width: 65%;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        font-size: small;
+    }
+    .boxxs .sbbb .ees{
+        background-color: wheat;
+        color: black;
+        padding: 22px 0 0 10px;
+        height: 5vh;
+        width: 65%;
+        border-radius: 6px;   
+        margin-top: 30px;
+        font-size: small;
+    }
+    .review{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: .5rem; 
+        background-color: deepskyblue;
+        padding: 3em 20%;
+    }
+    .review .onen{
+        text-align: center;
+    }
+.nhhb{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .4rem 1.2rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    text-align: center;
+}
+.nhhb:hover{
+    background-color: white;
+    color: black;
+}
+.review img{
+    width: 200px;
+}
+.lass h1{
+    text-align: center;
+    margin-top: 35px;
+}
+.lass .onedd{
+    display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(7rem,1fr));
+        gap: .5rem; 
+        padding: 3em 20%;
+}
+.lass .onedd .onee img{
+    width: 100px;
+}
+.lass .onedd .onee{
+background-color: wheat;
+text-align: center;
+}
+.footer{
+    display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(7rem,1fr));
+        gap: .5rem; 
+        background-color: black;
+        color: white;
+        padding: 3em 17%;
+
+}
+
+
+@media (max-width:412px) {
+  
+    .navs{
+        background-color: black;
+        width: 60%;
+    margin-left: 90px;
+    margin-top: 20px;
+    padding: 10px 0 0 5px;
+    }
+    .main .pone h1{
+        font-size: xx-large;
+        text-align: center;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        gap: .5rem;
+        padding: 4em 23% 0 23%;
+    }
+    nav .logo{
+        text-align: center;
+    }
+    .brtt{
+        margin-left: 50px;
+    }
+}
